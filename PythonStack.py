@@ -1,12 +1,22 @@
-stack = [3,4,5]
-stack.append(6)
-stack.append(7)
-stack.pop()
+#property: last in first out
+stack = []
 
-assert len(stack) == 4
-value = stack.pop()
-assert len(stack) == 3
-assert value == 6
+#push
+stack.append('A')
+stack.append('B')
+stack.append('C')
+stack.append('D')
+
+#pop
+character1 = stack.pop()
+
+#peek
+character2 = stack[-1]
+
+#printing size of the current stack
+print(len(stack))
+
+
 
 
 
